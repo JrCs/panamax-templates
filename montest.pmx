@@ -1,0 +1,17 @@
+---
+name: MonTest
+description: Test de mon template
+keywords: ''
+type: Default
+documentation: Pas de documentation pour l'instant
+images:
+- name: MonNginx
+  source: nginx:latest
+  type: Default
+  ports:
+  - host_port: '1234'
+    container_port: '80'
+    proto: TCP
+  environment:
+  - variable: Foo
+    value: Bar
